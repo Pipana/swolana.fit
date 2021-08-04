@@ -3,27 +3,15 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
-
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{# {% include "components/nav.njk" %} #}
-		</header>
+	<body class="bg-black white swole">
 
 		<main>
 			
 			{{ layoutContent | safe }}
 		
-		
-		{% include "components/form.njk" %}
+			{# {% include "components/form.njk" %} #}
+
 		</main>
-
-		
-
-
-		{% include "components/footer.njk" %}
 
 	</body>
 
